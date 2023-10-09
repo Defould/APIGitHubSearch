@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto;
+	font-style: normal;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 40px 50px;
+	width: 660px;
+	min-height: 765px;
+	background: #c4c4c4;
+}
+
+.form__input {
+	display: block;
+	width: 100%;
+	height: 60px;
+	font-size: 48px;
+	border: none;
+	padding: 5px 15px;
+}
+
+.autocomplete-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 5px 10px;
+	height: 45px;
+	border: 2px solid #000;
+	background: #e3e3e3;
+	font-size: 30px;
+}
+.autocomplete-item:hover {
+	cursor: pointer;
+	background: #65cdf9;
+}
+
+.repo-list {
+	display: block;
+	margin-top: auto;
+}
+
+.repo-list__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	padding: 10px 15px;
+	border: 1px solid #000;
+	background: #e27beb;
+	font-size: 24px;
+	list-style-type: none;
+}
+
+.item-delete {
+	position: relative;
+	width: 42px;
+	height: 42px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+.item-delete::before {
+	content: '';
+	position: absolute;
+	width: 42px;
+	height: 3px;
+	background-color: #ff0000;
+	rotate: -45deg;
+	top: 21px;
+	left: 0px;
+}
+.item-delete::after {
+	content: '';
+	position: absolute;
+	width: 42px;
+	height: 3px;
+	background-color: #ff0000;
+	rotate: 45deg;
+	top: 21px;
+	left: 0px;
+}
